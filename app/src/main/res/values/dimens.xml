@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">12dp</dimen>
+
+    <dimen name="about_content_margin">12dp</dimen>
+    <dimen name="about_content_card_padding">10dp</dimen>
+    <dimen name="about_content_card_elevation">4dp</dimen>
+
+    <dimen name="channel_setup_distance">10dp</dimen>
+    <dimen name="channel_setup_inner_margin">5dp</dimen>
+
+    <dimen name="channel_slider_thumb_radius">20dp</dimen>
+    <dimen name="channel_slider_track_thickness">15dp</dimen>
+
+    <dimen name="value_setup_horizontal_min_height">0dp</dimen>
+    <dimen name="value_setup_vertical_min_width">0dp</dimen>
+
+</resources>

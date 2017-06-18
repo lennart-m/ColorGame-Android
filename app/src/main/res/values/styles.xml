@@ -1,0 +1,120 @@
+<resources>
+
+    <style name="AboutActivityTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowMinWidthMajor">@fraction/about_activity_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@fraction/about_activity_min_width_minor</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ValueStepButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="ColorControlsSwitcher">
+        <item name="android:inAnimation">@anim/scale_in_left</item>
+        <item name="android:outAnimation">@anim/scale_out_right</item>
+    </style>
+
+    <style name="ValueStepButton.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ValueStepButton.Vertical">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ValueStepButton.Vertical.Increase">
+        <item name="android:src">@drawable/ic_increase_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ValueStepButton.Vertical.Decrease">
+        <item name="android:src">@drawable/ic_decrease_vertical</item>
+        <item name="android:layout_marginTop">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="Base.ValueStepButton.Horizontal.Increase" parent="ValueStepButton.Horizontal">
+        <item name="android:src">@drawable/ic_increase_horizontal</item>
+    </style>
+
+    <style name="ValueStepButton.Horizontal.Increase" parent="Base.ValueStepButton.Horizontal.Increase">
+        <item name="android:layout_marginLeft">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="Base.ValueStepButton.Horizontal.Decrease" parent="ValueStepButton.Horizontal">
+        <item name="android:src">@drawable/ic_decrease_horizontal</item>
+    </style>
+
+    <style name="ValueStepButton.Horizontal.Decrease" parent="Base.ValueStepButton.Horizontal.Decrease">
+        <item name="android:layout_marginRight">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ChannelValueSlider">
+        <item name="maxValue">255</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="thumbRadius">@dimen/channel_slider_thumb_radius</item>
+        <item name="trackThickness">@dimen/channel_slider_track_thickness</item>
+    </style>
+
+    <style name="ChannelValueSlider.Horizontal">
+        <item name="android:layout_width">0dp</item>
+        <item name="valueDirection">startToEnd</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ChannelValueSlider.Vertical">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="valueDirection">bottomToTop</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="ChannelValueDisplay">
+        <item name="android:ems">@integer/value_display_ems</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="ChannelValueDisplay.Horizontal">
+        <item name="android:layout_marginLeft">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ChannelValueDisplay.Vertical">
+        <item name="android:layout_marginTop">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ColorControlsRoot"/>
+
+    <style name="ColorControlsRoot.Vertical">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ColorControlsRoot.Horizontal">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AboutContentCard">
+        <item name="cardElevation">@dimen/about_content_card_elevation</item>
+        <item name="contentPadding">@dimen/about_content_card_padding</item>
+    </style>
+
+</resources>

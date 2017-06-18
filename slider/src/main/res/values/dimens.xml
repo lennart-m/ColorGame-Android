@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="simple_slider_default_thumb_radius">15dp</dimen>
+    <dimen name="simple_slider_default_track_thickness">15dp</dimen>
+
+</resources>

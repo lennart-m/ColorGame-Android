@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="color"
+            type="de.lennartmeinhardt.game.colormatching.RgbColor"/>
+
+        <variable
+            name="showValues"
+            type="boolean"/>
+
+        <variable
+            name="stepSize"
+            type="int"/>
+
+        <variable
+            name="showButtons"
+            type="boolean"/>
+
+        <variable
+            name="inputEnabled"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        style="@style/ColorControlsRoot.Horizontal">
+
+        <include
+            layout="@layout/color_channel_setup_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{showButtons}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/cyan_tint}"
+            app:value="@={255 - color.red}"
+            app:valueName="@{@string/color_cyan}"
+            app:valueStepHandler="@{color.cyanStepHandler}"/>
+
+        <include
+            layout="@layout/color_channel_setup_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/channel_setup_distance"
+            android:layout_marginTop="@dimen/channel_setup_distance"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{showButtons}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/magenta_tint}"
+            app:value="@={255 - color.green}"
+            app:valueName="@{@string/color_magenta}"
+            app:valueStepHandler="@{color.magentaStepHandler}"/>
+
+        <include
+            layout="@layout/color_channel_setup_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{showButtons}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/yellow_tint}"
+            app:value="@={255 - color.blue}"
+            app:valueName="@{@string/color_yellow}"
+            app:valueStepHandler="@{color.yellowStepHandler}"/>
+
+    </LinearLayout>
+
+</layout>

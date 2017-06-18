@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.graphics.Color"/>
+
+        <variable
+            name="shape"
+            type="android.graphics.drawable.Drawable"/>
+
+        <variable
+            name="shapeId"
+            type="int"/>
+
+        <variable
+            name="difficulty"
+            type="de.lennartmeinhardt.game.colormatching.Difficulty"/>
+
+        <variable
+            name="targetColor"
+            type="int"/>
+
+        <variable
+            name="currentColor"
+            type="de.lennartmeinhardt.game.colormatching.RgbColor"/>
+
+        <variable
+            name="showButtons"
+            type="boolean"/>
+
+        <variable
+            name="showValues"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:id="@+id/color_game_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        tools:context="de.lennartmeinhardt.game.colormatching.ColorGameActivity">
+
+        <include
+            layout="@layout/color_game_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_weight="1"
+            app:innerColor="@{targetColor}"
+            app:outerColor="@{currentColor.rgb}"/>
+
+        <ViewSwitcher
+            style="@style/ColorControlsSwitcher"
+            android:id="@+id/edit_controls_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <include
+                layout="@layout/color_setup_rgb_vertical"
+                app:color="@{currentColor}"
+                app:inputEnabled="@{currentColor.rgb != targetColor}"
+                app:showButtons="@{showButtons}"
+                app:showValues="@{showValues}"
+                app:stepSize="@{difficulty.stepSize}"/>
+
+            <include
+                layout="@layout/color_setup_cmy_vertical"
+                app:color="@{currentColor}"
+                app:inputEnabled="@{currentColor.rgb != targetColor}"
+                app:showButtons="@{showButtons}"
+                app:showValues="@{showValues}"
+                app:stepSize="@{difficulty.stepSize}"/>
+
+        </ViewSwitcher>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,58 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Farbspiel</string>
+
+    <!-- Options menu -->
+    <string name="action_give_hint">Tipp geben</string>
+    <string name="action_new_game">Neues Spiel</string>
+    <string name="action_about">Hilfe</string>
+    <string name="action_select_difficulty">Schwierigkeitsgrad</string>
+    <string name="action_edit_rgb">RGB mischen</string>
+    <string name="action_edit_cmy">CMY mischen</string>
+    <string name="action_show_values">Werte zeigen</string>
+    <string name="action_show_buttons">Tasten zeigen</string>
+
+    <!-- Hints -->
+    <string name="hint_increase">Der %swert ist zu niedrig</string>
+    <string name="hint_decrease">Der %swert ist zu hoch</string>
+    <string name="hint_correct">Die Farben stimmen überein!</string>
+    <!-- Color names -->
+    <string name="color_red">Rot</string>
+    <string name="color_green">Grün</string>
+    <string name="color_blue">Blau</string>
+    <string name="color_cyan">Cyan</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_yellow">Gelb</string>
+
+    <string name="tit_select_difficulty">Schwierigkeitsgrad wählen</string>
+    <string name="difficulty_easy">Einfach &#8211; 15er-Schritte</string>
+    <string name="difficulty_normal">Normal &#8211; 5er-Schritte</string>
+    <string name="difficulty_hard">Schwierig &#8211; alle Farben wählbar</string>
+
+    <!-- Controls -->
+    <string name="content_description_decrease_value">%swert verringern</string>
+    <string name="content_description_increase_value">%swert erhöhen</string>
+
+    <!-- About -->
+    <string name="about_game"><![CDATA[
+        <p>Deine Aufgabe ist es zu erreichen, dass beide Kreise dieselbe Farbe haben.</p>
+        <p>Die Farbe des inneren Kreises ist vom Spiel zufällig gewählt und vorgegeben.</p>
+        Durch Bewegen der Schieberegler kannst du die Farbe des äußeren Kreises im additiven Farbsystem (<font color="#ff6666">red</font>, <font color="#66ff66">green</font>, <font color="#6666ff">blue</font>), als auch im subtraktiven Farbsystem (<font color="#66ffff">cyan</font>, <font color="#ff66ff">magenta</font>, <font color="#ffff66">yellow</font>) mischen.]]></string>
+    <string name="about_author_with_mail">Diese App wurde 2014&#8211;2015 von Lennart Meinhardt geschrieben, und 2017 komplett neu geschrieben.\n
+        \n
+        Über eine E-Mail mit Feedback oder Vorschlägen würde ich mich sehr freuen!</string>
+    <string name="send_email_button_text">E-mail schicken</string>
+    <string name="email_subject">Farbspiel für Android</string>
+    <string name="view_source_code_button_text">Quellcode ansehen</string>
+    <string name="about_source_code">Falls es dich interessiert, wie diese App funktioniert, kannst du dir den Quellcode ansehen.</string>
+
+    <!-- Game finished -->
+    <string name="tit_correct">Gut gemacht!</string>
+    <string name="msg_correct">Die Farben stimmen überein.\n
+        \n
+        Was möchtest du als nächstes machen?</string>
+    <string name="game_finished_nothing">Nichts</string>
+    <string name="game_finished_new_game">Nochmal spielen</string>
+    <string name="game_finished_quit">Beenden</string>
+
+</resources>

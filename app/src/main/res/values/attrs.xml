@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ColorGameView">
+        <attr name="innerColor" format="color"/>
+        <attr name="outerColor" format="color"/>
+    </declare-styleable>
+
+</resources>

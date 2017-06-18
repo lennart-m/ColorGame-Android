@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Slider">
+        <attr name="value" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="valueSteps" format="integer"/>
+        <attr name="valueDirection" format="enum">
+            <enum name="leftToRight" value="0"/>
+            <enum name="rightToLeft" value="1"/>
+            <enum name="startToEnd" value="2"/>
+            <enum name="endToStart" value="3"/>
+            <enum name="bottomToTop" value="4"/>
+            <enum name="topToBottom" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <attr name="tint" format="color"/>
+
+    <declare-styleable name="SimpleSlider" parent="Slider">
+        <attr name="tint"/>
+        <attr name="thumbRadius" format="dimension"/>
+        <attr name="trackThickness" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="DrawableSlider" parent="Slider">
+        <attr name="thumbDrawable" format="reference"/>
+        <attr name="trackDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TintedDrawableSlider" parent="SliderWithDrawables">
+        <attr name="tint"/>
+    </declare-styleable>
+
+</resources>

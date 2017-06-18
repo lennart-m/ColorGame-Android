@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="start_edit_rgb">true</bool>
+    <bool name="start_show_values">true</bool>
+    <bool name="start_show_buttons">true</bool>
+
+</resources>

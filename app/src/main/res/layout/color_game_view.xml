@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="outerColor"
+            type="int"/>
+
+        <variable
+            name="innerColor"
+            type="int"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.lennartmeinhardt.game.colormatching.RectangularChildrenLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/filled_circle"
+                app:colorFilter="@{outerColor}"
+                tools:tint="#fbb"/>
+
+        </de.lennartmeinhardt.game.colormatching.RectangularChildrenLayout>
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.lennartmeinhardt.game.colormatching.RectangularChildrenLayout
+                android:layout_gravity="center"
+                app:layout_heightPercent="50%"
+                app:layout_widthPercent="50%">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/filled_circle"
+                    app:colorFilter="@{innerColor}"
+                    tools:tint="#f00"/>
+
+            </de.lennartmeinhardt.game.colormatching.RectangularChildrenLayout>
+
+        </android.support.percent.PercentFrameLayout>
+
+    </FrameLayout>
+
+</layout>

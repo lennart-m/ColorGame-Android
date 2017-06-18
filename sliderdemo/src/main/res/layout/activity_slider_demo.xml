@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="inputEnabled"
+            type="boolean"/>
+
+        <variable
+            name="value"
+            type="int"/>
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="de.lennartmeinhardt.android.sliderdemo.SliderDemoActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/formatter(value)}"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <de.lennartmeinhardt.android.slider.SimpleSlider
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="@{inputEnabled}"
+                android:padding="10dp"
+                app:maxValue="255"
+                app:tint="#6ff"
+                app:value="@={value}"
+                app:valueDirection="bottomToTop"
+                app:valueSteps="17"/>
+
+            <de.lennartmeinhardt.android.slider.SimpleSlider
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="@{inputEnabled}"
+                android:padding="10dp"
+                app:tint="#f6f"
+                app:value="@={value}"
+                app:valueDirection="topToBottom"/>
+
+            <de.lennartmeinhardt.android.slider.SimpleSlider
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="@{inputEnabled}"
+                android:padding="10dp"
+                app:tint="#ff6"
+                app:value="@={value}"
+                app:valueDirection="bottomToTop"/>
+
+        </LinearLayout>
+
+        <de.lennartmeinhardt.android.slider.SimpleSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="@{inputEnabled}"
+            android:padding="10dp"
+            app:tint="#f66"
+            app:value="@={value}"
+            app:valueDirection="leftToRight"/>
+
+        <de.lennartmeinhardt.android.slider.SimpleSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="@{inputEnabled}"
+            android:padding="10dp"
+            app:tint="#6f6"
+            app:value="@={value}"
+            app:valueDirection="rightToLeft"/>
+
+        <de.lennartmeinhardt.android.slider.SimpleSlider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="@{inputEnabled}"
+            android:padding="10dp"
+            app:tint="#66f"
+            app:value="@={value}"
+            app:valueDirection="startToEnd"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="@={inputEnabled}"
+            android:text="@string/input_enabled"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.lennartmeinhardt.android.slider.SimpleSlider
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:enabled="@{inputEnabled}"
+                app:minValue="0"
+                app:maxValue="100"
+                app:valueSteps="10000"
+                android:padding="10dp"
+                app:tint="#fff"
+                app:value="@={value}"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ems="3"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="@{Integer.toString(value)}"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

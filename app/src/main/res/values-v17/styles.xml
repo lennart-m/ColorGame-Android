@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ChannelValueDisplay.Horizontal">
+        <item name="android:layout_marginStart">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ValueStepButton.Horizontal.Increase" parent="Base.ValueStepButton.Horizontal.Increase">
+        <item name="android:layout_marginStart">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+    <style name="ValueStepButton.Horizontal.Decrease" parent="Base.ValueStepButton.Horizontal.Decrease">
+        <item name="android:layout_marginEnd">@dimen/channel_setup_inner_margin</item>
+    </style>
+
+</resources>

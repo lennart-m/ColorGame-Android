@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <import type="de.lennartmeinhardt.android.slider.SimpleSlider"/>
+
+        <variable
+            name="value"
+            type="int"/>
+
+        <variable
+            name="stepSize"
+            type="int"/>
+
+        <variable
+            name="valueName"
+            type="String"/>
+
+        <variable
+            name="tint"
+            type="int"/>
+
+        <variable
+            name="inputEnabled"
+            type="boolean"/>
+
+        <variable
+            name="showValue"
+            type="boolean"/>
+
+        <variable
+            name="showButtons"
+            type="boolean"/>
+
+        <variable
+            name="valueStepHandler"
+            type="de.lennartmeinhardt.game.colormatching.ValueStepHandler"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/value_setup_horizontal_min_height"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/ValueStepButton.Horizontal.Decrease"
+            android:alpha="@{inputEnabled ? SimpleSlider.ALPHA_NORMAL : SimpleSlider.ALPHA_DISABLED}"
+            android:contentDescription="@{@string/content_description_decrease_value(valueName)}"
+            android:enabled="@{inputEnabled &amp;&amp; value > 0}"
+            android:onClick="@{v -> valueStepHandler.decreaseBy(stepSize)}"
+            android:visibility="@{showButtons ? View.VISIBLE : View.GONE}"
+            app:colorFilter="@{tint}"/>
+
+        <de.lennartmeinhardt.android.slider.SimpleSlider
+            style="@style/ChannelValueSlider.Horizontal"
+            android:enabled="@{inputEnabled}"
+            app:tint="@{tint}"
+            app:value="@={value}"
+            app:valueSteps="@{255 / stepSize}"/>
+
+        <ImageButton
+            style="@style/ValueStepButton.Horizontal.Increase"
+            android:alpha="@{inputEnabled ? SimpleSlider.ALPHA_NORMAL : SimpleSlider.ALPHA_DISABLED}"
+            android:contentDescription="@{@string/content_description_increase_value(valueName)}"
+            android:enabled="@{inputEnabled &amp;&amp; value &lt; 255}"
+            android:onClick="@{v -> valueStepHandler.increaseBy(stepSize)}"
+            android:visibility="@{showButtons ? View.VISIBLE : View.GONE}"
+            app:colorFilter="@{tint}"/>
+
+        <de.lennartmeinhardt.game.colormatching.AlphaTextView
+            style="@style/ChannelValueDisplay.Horizontal"
+            android:alpha="@{inputEnabled ? 255 : SimpleSlider.ALPHA_DISABLED}"
+            android:text="@{Integer.toString(value)}"
+            android:textColor="@{tint}"
+            android:visibility="@{showValue ? View.VISIBLE : View.GONE}"
+            tools:text="255"/>
+
+    </LinearLayout>
+
+</layout>

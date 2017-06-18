@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#444</color>
+    <color name="colorPrimaryDark">#222</color>
+    <color name="colorAccent">#eee</color>
+
+    <color name="red_tint">#f66</color>
+    <color name="green_tint">#6f6</color>
+    <color name="blue_tint">#66f</color>
+
+    <color name="cyan_tint">#6ff</color>
+    <color name="magenta_tint">#f6f</color>
+    <color name="yellow_tint">#ff6</color>
+
+    <color name="start_current_color">#5a96d2</color>
+    <color name="start_target_color">#3c5a78</color>
+
+    <color name="about_root_background">#333</color>
+
+</resources>

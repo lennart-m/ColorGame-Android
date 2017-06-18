@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="email_address" translatable="false">lennart.meinhardt+colorgameandroid@googlemail.com</string>
+    <string name="source_code_address" translatable="false">about:blank</string>
+
+    <string-array name="difficulties">
+        <item>@string/difficulty_easy</item>
+        <item>@string/difficulty_normal</item>
+        <item>@string/difficulty_hard</item>
+    </string-array>
+
+</resources>

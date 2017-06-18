@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Slider Demo</string>
+
+    <string name="formatter">Value: %d</string>
+
+    <string name="input_enabled">Input enabled</string>
+</resources>

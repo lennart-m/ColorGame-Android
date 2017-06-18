@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_swap_mode"
+        android:icon="@drawable/ic_action_edit_mode"
+        android:title=""
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_give_hint"
+        android:icon="@drawable/ic_action_give_hint"
+        android:title="@string/action_give_hint"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_new_game"
+        android:title="@string/action_new_game"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_difficulty"
+        android:title="@string/action_select_difficulty"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_show_values"
+        android:checkable="true"
+        android:title="@string/action_show_values"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_show_buttons"
+        android:checkable="true"
+        android:title="@string/action_show_buttons"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/debug_action_show_solution"
+        android:title="Show solution"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+
+    <item
+        android:id="@+id/debug_action_cheat"
+        android:title="Cheat"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+
+</menu>
