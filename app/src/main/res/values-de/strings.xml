@@ -13,8 +13,8 @@
     <string name="action_show_buttons">Tasten zeigen</string>
 
     <!-- Hints -->
-    <string name="hint_increase">Der %swert ist zu niedrig</string>
-    <string name="hint_decrease">Der %swert ist zu hoch</string>
+    <string name="hint_increase">Der %s-Wert ist zu niedrig</string>
+    <string name="hint_decrease">Der %s-Wert ist zu hoch</string>
     <string name="hint_correct">Die Farben stimmen überein!</string>
     <!-- Color names -->
     <string name="color_red">Rot</string>
@@ -37,7 +37,7 @@
     <string name="about_game"><![CDATA[
         <p>Deine Aufgabe ist es zu erreichen, dass beide Kreise dieselbe Farbe haben.</p>
         <p>Die Farbe des inneren Kreises ist vom Spiel zufällig gewählt und vorgegeben.</p>
-        Durch Bewegen der Schieberegler kannst du die Farbe des äußeren Kreises im additiven Farbsystem (<font color="#ff6666">red</font>, <font color="#66ff66">green</font>, <font color="#6666ff">blue</font>), als auch im subtraktiven Farbsystem (<font color="#66ffff">cyan</font>, <font color="#ff66ff">magenta</font>, <font color="#ffff66">yellow</font>) mischen.]]></string>
+        Durch Bewegen der Schieberegler kannst du die Farbe des äußeren Kreises im additiven Farbsystem (<font color="#ff6666">Rot</font>, <font color="#66ff66">Grün</font>, <font color="#6666ff">Blau</font>), als auch im subtraktiven Farbsystem (<font color="#66ffff">Cyan</font>, <font color="#ff66ff">Magenta</font>, <font color="#ffff66">Gelb</font>) mischen.]]></string>
     <string name="about_author_with_mail">Diese App wurde 2014&#8211;2015 von Lennart Meinhardt geschrieben, und 2017 komplett neu geschrieben.\n
         \n
         Über eine E-Mail mit Feedback oder Vorschlägen würde ich mich sehr freuen!</string>
