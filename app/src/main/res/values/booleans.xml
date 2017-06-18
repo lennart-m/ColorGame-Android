@@ -5,4 +5,8 @@
     <bool name="start_show_values">true</bool>
     <bool name="start_show_buttons">true</bool>
 
+    <bool name="is_no_tv">true</bool>
+
+    <bool name="debug_mode_active">false</bool>
+
 </resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="color"
+            type="de.lennartmeinhardt.game.colormatching.RgbColor"/>
+
+        <variable
+            name="showValues"
+            type="boolean"/>
+
+        <variable
+            name="stepSize"
+            type="int"/>
+
+        <variable
+            name="inputEnabled"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        style="@style/ColorControlsRoot.Vertical">
+
+        <include
+            layout="@layout/color_channel_setup_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{false}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/red_tint}"
+            app:value="@={color.red}"
+            app:valueName="@{@string/color_red}"
+            app:valueStepHandler="@{color.redStepHandler}"/>
+
+        <include
+            layout="@layout/color_channel_setup_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/channel_setup_distance"
+            android:layout_marginLeft="@dimen/channel_setup_distance"
+            android:layout_marginRight="@dimen/channel_setup_distance"
+            android:layout_marginStart="@dimen/channel_setup_distance"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{false}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/green_tint}"
+            app:value="@={color.green}"
+            app:valueName="@{@string/color_green}"
+            app:valueStepHandler="@{color.greenStepHandler}"/>
+
+        <include
+            layout="@layout/color_channel_setup_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:inputEnabled="@{inputEnabled}"
+            app:showButtons="@{false}"
+            app:showValue="@{showValues}"
+            app:stepSize="@{stepSize}"
+            app:tint="@{@color/blue_tint}"
+            app:value="@={color.blue}"
+            app:valueName="@{@string/color_blue}"
+            app:valueStepHandler="@{color.blueStepHandler}"/>
+
+    </LinearLayout>
+
+</layout>

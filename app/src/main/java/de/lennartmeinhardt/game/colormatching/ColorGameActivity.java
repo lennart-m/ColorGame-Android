@@ -21,7 +21,6 @@ import de.lennartmeinhardt.game.colormatching.databinding.ActivityColorGameBindi
 
 public class ColorGameActivity extends AppCompatActivity {
 
-    private static final boolean DEBUG_MODE_ACTIVE = false;
     private static final String KEY_REOPEN_GAME_FINISHED_DIALOG = "de.lennartmeinhardt.game.colormatching:colorGameActivity:finishedDialogOpen";
 
     private final Random random = new Random();
@@ -105,13 +104,13 @@ public class ColorGameActivity extends AppCompatActivity {
                         finishedDialogOpen = false;
                     }
                 })
-//                .setNegativeButton(R.string.game_finished_quit, new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        finishedDialogOpen = false;
-//                        finish();
-//                    }
-//                })
+                .setNegativeButton(R.string.game_finished_quit, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finishedDialogOpen = false;
+                        finish();
+                    }
+                })
                 .setPositiveButton(R.string.game_finished_new_game, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -138,9 +137,6 @@ public class ColorGameActivity extends AppCompatActivity {
         showValuesMenuItem.setChecked(binding.getShowValues());
         MenuItem showButtonsMenuItem = menu.findItem(R.id.action_show_buttons);
         showButtonsMenuItem.setChecked(binding.getShowButtons());
-
-        menu.findItem(R.id.debug_action_show_solution).setVisible(DEBUG_MODE_ACTIVE);
-        menu.findItem(R.id.debug_action_cheat).setVisible(DEBUG_MODE_ACTIVE);
 
         updateEditMenuItemText();
         return true;

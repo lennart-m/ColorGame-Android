@@ -7,10 +7,13 @@
     <dimen name="about_content_margin">20dp</dimen>
     <dimen name="about_content_card_padding">14dp</dimen>
 
-    <dimen name="channel_setup_distance">16dp</dimen>
+    <dimen name="channel_setup_distance">12dp</dimen>
     <dimen name="channel_setup_inner_margin">8dp</dimen>
 
     <dimen name="channel_slider_thumb_radius">25dp</dimen>
     <dimen name="channel_slider_track_thickness">20dp</dimen>
+
+    <dimen name="value_setup_horizontal_min_height">55dp</dimen>
+    <dimen name="value_setup_vertical_min_width">60dp</dimen>
 
 </resources>

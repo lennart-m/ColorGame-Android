@@ -7,7 +7,9 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme" parent="Theme.AppCompat">
+    <style name="Base.AppTheme" parent="Theme.AppCompat"/>
+
+    <style name="AppTheme" parent="Base.AppTheme">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
