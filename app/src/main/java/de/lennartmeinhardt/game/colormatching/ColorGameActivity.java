@@ -87,8 +87,8 @@ public class ColorGameActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
+    protected void onPause() {
+        super.onPause();
 
         PreferencesHelper.storeToPreferences(this);
     }

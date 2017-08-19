@@ -7,22 +7,27 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
-public class RectangularChildrenLayout extends ViewGroup {
+/**
+ * A simple {@link ViewGroup} that lays out its children as squares fitting in this container.
+ * Does not respect padding or margins as this is not required for this simple app.
+ */
+public class SquareChildrenLayout extends ViewGroup {
 
-    public RectangularChildrenLayout(@NonNull Context context) {
+    public SquareChildrenLayout(@NonNull Context context) {
         super(context);
     }
 
-    public RectangularChildrenLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public SquareChildrenLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public RectangularChildrenLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
+    public SquareChildrenLayout(@NonNull Context context, @Nullable AttributeSet attrs, @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @Override
     protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        // determine max child size, children cannot be larger than width or height of this container
         int maxWidth = right - left,
             maxHeight = bottom - top,
             size = Math.min(maxWidth, maxHeight),

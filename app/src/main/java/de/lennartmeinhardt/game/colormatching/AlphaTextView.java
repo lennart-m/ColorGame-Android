@@ -7,7 +7,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 
-// TODO: check if v26 AppCompatTextView correctly sets alpha
+/**
+ * A simple {@link android.widget.TextView} that correctly respects text alpha.
+ */
 public class AlphaTextView extends AppCompatTextView {
 
     private int alpha;
@@ -35,10 +37,21 @@ public class AlphaTextView extends AppCompatTextView {
         setTextColor(ColorStateList.valueOf(color));
     }
 
+    /**
+     * Set the text color, respecting alpha.
+     *
+     * @param colors the color to set
+     * @param alpha the alpha to set
+     */
     private void setTextColorsWithAlpha(ColorStateList colors, int alpha) {
         super.setTextColor(colors.withAlpha(alpha));
     }
 
+    /**
+     * Set this view's alpha. This will set the text color so it has alpha.
+     *
+     * @param alpha the alpha to set
+     */
     public void setAlpha(int alpha) {
         alpha &= 0xff;
         this.alpha = alpha;

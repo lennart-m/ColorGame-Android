@@ -38,9 +38,9 @@
         <p>Deine Aufgabe ist es zu erreichen, dass beide Kreise dieselbe Farbe haben.</p>
         <p>Die Farbe des inneren Kreises ist vom Spiel zufällig gewählt und vorgegeben.</p>
         Durch Bewegen der Schieberegler kannst du die Farbe des äußeren Kreises im additiven Farbsystem (<font color="#ff6666">Rot</font>, <font color="#66ff66">Grün</font>, <font color="#6666ff">Blau</font>), als auch im subtraktiven Farbsystem (<font color="#66ffff">Cyan</font>, <font color="#ff66ff">Magenta</font>, <font color="#ffff66">Gelb</font>) mischen.]]></string>
-    <string name="about_author_with_mail">Diese App wurde 2014&#8211;2015 von Lennart Meinhardt geschrieben, und 2017 komplett neu geschrieben.\n
+    <string name="about_author_with_mail">Diese App wurde 2014&#8211;2015 von Lennart Meinhardt geschrieben, und 2017 komplett neu geschrieben.
         \n
-        Über eine E-Mail mit Feedback oder Vorschlägen würde ich mich sehr freuen!</string>
+        \nÜber eine E-Mail mit Feedback oder Vorschlägen würde ich mich sehr freuen!</string>
     <string name="send_email_button_text">E-mail schicken</string>
     <string name="email_subject">Farbspiel für Android</string>
     <string name="view_source_code_button_text">Quellcode ansehen</string>
@@ -48,9 +48,9 @@
 
     <!-- Game finished -->
     <string name="tit_correct">Gut gemacht!</string>
-    <string name="msg_correct">Die Farben stimmen überein.\n
+    <string name="msg_correct">Die Farben stimmen überein.
         \n
-        Was möchtest du als nächstes machen?</string>
+        \nWas möchtest du als nächstes machen?</string>
     <string name="game_finished_nothing">Nichts</string>
     <string name="game_finished_new_game">Nochmal spielen</string>
     <string name="game_finished_quit">Beenden</string>

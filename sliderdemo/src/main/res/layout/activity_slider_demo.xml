@@ -79,6 +79,9 @@
             android:layout_height="wrap_content"
             android:enabled="@{inputEnabled}"
             android:padding="10dp"
+            app:minValue="20"
+            app:maxValue="80"
+            app:valueSteps="4"
             app:tint="#6f6"
             app:value="@={value}"
             app:valueDirection="rightToLeft"/>
@@ -88,6 +91,9 @@
             android:layout_height="wrap_content"
             android:enabled="@{inputEnabled}"
             android:padding="10dp"
+            app:minValue="10"
+            app:maxValue="90"
+            app:valueSteps="-1"
             app:tint="#66f"
             app:value="@={value}"
             app:valueDirection="startToEnd"/>

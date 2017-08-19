@@ -5,7 +5,7 @@
     <!-- Options menu -->
     <string name="action_give_hint">Give hint</string>
     <string name="action_new_game">New game</string>
-    <string name="action_about">About</string>
+    <string name="action_about">Help</string>
     <string name="action_select_difficulty">Difficulty level</string>
     <string name="action_edit_rgb">RGB mixing</string>
     <string name="action_edit_cmy">CMY mixing</string>
@@ -38,9 +38,9 @@
         <p>Your task is to make the two circles have the same color.</p>
         <p>The inner circle\'s color is chosen randomly by the game.</p>
         Moving the sliders you can mix the outer circle\'s color using the additive color system (<font color="#ff6666">red</font>, <font color="#66ff66">green</font>, <font color="#6666ff">blue</font>) as well as the subtractive color system (<font color="#66ffff">cyan</font>, <font color="#ff66ff">magenta</font>, <font color="#ffff66">yellow</font>).]]></string>
-    <string name="about_author_with_mail">This application was written by Lennart Meinhardt in 2014&#8211;2015 and completely rewritten in 2017.\n
+    <string name="about_author_with_mail">This application was written by Lennart Meinhardt in 2014&#8211;2015 and completely rewritten in 2017.
         \n
-        I would be very happy to read your feedback or suggestions!</string>
+        \nI would be very happy to read your feedback or suggestions!</string>
     <string name="send_email_button_text">Send e-mail</string>
     <string name="email_subject">Color Game for Android</string>
     <string name="view_source_code_button_text">View source code</string>
@@ -48,9 +48,9 @@
 
     <!-- Game finished -->
     <string name="tit_correct">Well done!</string>
-    <string name="msg_correct">You matched the colors.\n
+    <string name="msg_correct">You matched the colors.
         \n
-        What to do next?</string>
+        \nWhat to do next?</string>
     <string name="game_finished_nothing">Nothing</string>
     <string name="game_finished_new_game">Play again</string>
     <string name="game_finished_quit">Quit</string>
